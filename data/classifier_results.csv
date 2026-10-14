@@ -1,0 +1,16 @@
+CaseID,ComplaintText,ExpectedCategory,ActualCategory,ExpectedUrgency,ActualUrgency,ExpectedHumanReview,ActualHumanReview,Result
+1,Unknown monthly fee charged,Fees,Fees,Medium,Medium,False,False,Pass
+2,Charged overdraft fee incorrectly,Fees,Fees,Medium,Medium,False,False,Pass
+3,Card used for purchase I did not make,Card or Transaction Dispute,Card or Transaction Dispute,High,High,True,True,Pass
+4,Unauthorized debit card transaction,Card or Transaction Dispute,Card or Transaction Dispute,High,High,True,True,Pass
+5,Banking app keeps crashing,Digital Banking,Digital Banking,Medium,Medium,False,False,Pass
+6,Mobile banking unavailable today,Digital Banking,Digital Banking,Medium,Medium,False,False,Pass
+7,Nobody followed up after my complaint,Service Quality,Service Quality,Medium,Medium,True,True,Pass
+8,Customer service never called back,Service Quality,Service Quality,Medium,Medium,True,True,Pass
+9,Mortgage payment applied incorrectly,Mortgage Servicing,Mortgage Servicing,High,High,True,True,Pass
+10,Incorrect mortgage balance shown,Mortgage Servicing,Mortgage Servicing,High,High,True,True,Pass
+11,Cannot access online banking,Account Access,Account Access,Medium,Medium,False,False,Pass
+12,My account login no longer works,Account Access,Account Access,Medium,Medium,False,False,Pass
+13,App login fails after update,Account Access,Digital Banking,Medium,Medium,False,False,Fail
+14,Rude service and unexplained fee,Fees,Service Quality,Medium,Medium,True,True,Fail
+15,I think something is wrong but not sure,Service Quality,Service Quality,Medium,Medium,True,True,Pass
