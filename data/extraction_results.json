@@ -1,0 +1,52 @@
+[
+  {
+    "input": "Customer ID CUST1001. Account 87654321 was charged $125 on 2025-09-20. Please refund the fee.",
+    "output": {
+      "customer_id": "CUST1001",
+      "account_id": "87654321",
+      "amount": 125,
+      "transaction_date": "2025-09-20",
+      "requested_action": "refund the fee",
+      "evidence_spans": [
+        "Customer ID CUST1001",
+        "Account 87654321",
+        "$125",
+        "2025-09-20",
+        "refund the fee"
+      ]
+    },
+    "schema_validation": "PASS"
+  },
+  {
+    "input": "My account ACC-9001 shows a duplicate transfer of $300. Please investigate.",
+    "output": {
+      "customer_id": null,
+      "account_id": "ACC-9001",
+      "amount": 300,
+      "transaction_date": null,
+      "requested_action": "investigate",
+      "evidence_spans": [
+        "account ACC-9001",
+        "$300",
+        "investigate"
+      ]
+    },
+    "schema_validation": "PASS"
+  },
+  {
+    "input": "Customer number 456789. The card fee charged on March 5 was incorrect. Reverse the fee.",
+    "output": {
+      "customer_id": "456789",
+      "account_id": null,
+      "amount": null,
+      "transaction_date": "March 5",
+      "requested_action": "Reverse the fee",
+      "evidence_spans": [
+        "Customer number 456789",
+        "March 5",
+        "Reverse the fee"
+      ]
+    },
+    "schema_validation": "PASS"
+  }
+]

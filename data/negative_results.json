@@ -1,0 +1,20 @@
+{
+  "input": "I was unexpectedly charged and would like someone to review the issue.",
+  "output": {
+    "customer_id": null,
+    "account_id": null,
+    "amount": null,
+    "transaction_date": null,
+    "requested_action": null,
+    "evidence_spans": []
+  },
+  "validation_result": "PASS",
+  "notes": [
+    "No customer identifier present",
+    "No account identifier present",
+    "No amount present",
+    "No transaction date present",
+    "Requested action not explicit enough to populate field",
+    "No values inferred"
+  ]
+}
