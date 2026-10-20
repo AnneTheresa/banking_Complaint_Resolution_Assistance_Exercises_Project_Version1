@@ -1,0 +1,38 @@
+﻿query_id,question,parameters,result_state,returned_rows,row_number,complaint_id,customer_id,account_id,channel,category,priority,status,received_at,assigned_analyst_id,complaint_count
+Q1,All open complaints,,RESULT,5,1,CMP010,CUS010,ACC010,Email,Fee Dispute,Medium,OPEN,2025-01-25 08:45:00,EMP002,
+Q1,All open complaints,,RESULT,5,2,CMP008,CUS008,ACC008,Phone,Customer Service,Low,OPEN,2025-01-22 15:00:00,EMP006,
+Q1,All open complaints,,RESULT,5,3,CMP006,CUS006,ACC006,Email,Card Issue,High,OPEN,2025-01-18 12:00:00,EMP002,
+Q1,All open complaints,,RESULT,5,4,CMP004,CUS004,ACC004,Web,Online Banking,Low,OPEN,2025-01-12 10:00:00,EMP006,
+Q1,All open complaints,,RESULT,5,5,CMP001,CUS001,ACC001,Phone,Fee Dispute,High,OPEN,2025-01-01 09:00:00,EMP001,
+Q2,High-priority unresolved complaints,,RESULT,4,1,CMP007,CUS007,ACC007,Web,Transaction Error,High,IN_PROGRESS,2025-01-20 09:30:00,EMP001,
+Q2,High-priority unresolved complaints,,RESULT,4,2,CMP006,CUS006,ACC006,Email,Card Issue,High,OPEN,2025-01-18 12:00:00,EMP002,
+Q2,High-priority unresolved complaints,,RESULT,4,3,CMP003,CUS003,ACC003,Branch,Transaction Error,High,UNDER_REVIEW,2025-01-09 14:00:00,EMP001,
+Q2,High-priority unresolved complaints,,RESULT,4,4,CMP001,CUS001,ACC001,Phone,Fee Dispute,High,OPEN,2025-01-01 09:00:00,EMP001,
+Q3,Complaints by status,,RESULT,4,1,,,,,,,OPEN,,,5
+Q3,Complaints by status,,RESULT,4,2,,,,,,,IN_PROGRESS,,,2
+Q3,Complaints by status,,RESULT,4,3,,,,,,,UNDER_REVIEW,,,2
+Q3,Complaints by status,,RESULT,4,4,,,,,,,CLOSED,,,1
+Q4,Complaints by category,,RESULT,7,1,,,,,Fee Dispute,,,,,3
+Q4,Complaints by category,,RESULT,7,2,,,,,Transaction Error,,,,,2
+Q4,Complaints by category,,RESULT,7,3,,,,,Card Issue,,,,,1
+Q4,Complaints by category,,RESULT,7,4,,,,,Customer Service,,,,,1
+Q4,Complaints by category,,RESULT,7,5,,,,,Fraud Claim,,,,,1
+Q4,Complaints by category,,RESULT,7,6,,,,,Online Banking,,,,,1
+Q4,Complaints by category,,RESULT,7,7,,,,,Service Delay,,,,,1
+Q5,Complaints for customer ID,customer_id=CUS001,RESULT,1,1,CMP001,CUS001,ACC001,Phone,Fee Dispute,High,OPEN,2025-01-01 09:00:00,EMP001,
+Q6,Complaints in date range,start_date=2025-01-09; end_date=2025-01-20,RESULT,5,1,CMP003,CUS003,ACC003,Branch,Transaction Error,High,UNDER_REVIEW,2025-01-09 14:00:00,EMP001,
+Q6,Complaints in date range,start_date=2025-01-09; end_date=2025-01-20,RESULT,5,2,CMP004,CUS004,ACC004,Web,Online Banking,Low,OPEN,2025-01-12 10:00:00,EMP006,
+Q6,Complaints in date range,start_date=2025-01-09; end_date=2025-01-20,RESULT,5,3,CMP005,CUS005,ACC005,Phone,Fee Dispute,Medium,CLOSED,2025-01-15 13:00:00,EMP007,
+Q6,Complaints in date range,start_date=2025-01-09; end_date=2025-01-20,RESULT,5,4,CMP006,CUS006,ACC006,Email,Card Issue,High,OPEN,2025-01-18 12:00:00,EMP002,
+Q6,Complaints in date range,start_date=2025-01-09; end_date=2025-01-20,RESULT,5,5,CMP007,CUS007,ACC007,Web,Transaction Error,High,IN_PROGRESS,2025-01-20 09:30:00,EMP001,
+Q7,CLOSED complaints without timestamped CLOSED history event (schema proxy),,NO_ROWS,0,,,,,,,,,,,
+Q8,Ten most recent complaints,,RESULT,10,1,CMP010,CUS010,ACC010,Email,Fee Dispute,Medium,OPEN,2025-01-25 08:45:00,EMP002,
+Q8,Ten most recent complaints,,RESULT,10,2,CMP009,CUS009,ACC009,Branch,Fraud Claim,Critical,UNDER_REVIEW,2025-01-24 16:30:00,EMP007,
+Q8,Ten most recent complaints,,RESULT,10,3,CMP008,CUS008,ACC008,Phone,Customer Service,Low,OPEN,2025-01-22 15:00:00,EMP006,
+Q8,Ten most recent complaints,,RESULT,10,4,CMP007,CUS007,ACC007,Web,Transaction Error,High,IN_PROGRESS,2025-01-20 09:30:00,EMP001,
+Q8,Ten most recent complaints,,RESULT,10,5,CMP006,CUS006,ACC006,Email,Card Issue,High,OPEN,2025-01-18 12:00:00,EMP002,
+Q8,Ten most recent complaints,,RESULT,10,6,CMP005,CUS005,ACC005,Phone,Fee Dispute,Medium,CLOSED,2025-01-15 13:00:00,EMP007,
+Q8,Ten most recent complaints,,RESULT,10,7,CMP004,CUS004,ACC004,Web,Online Banking,Low,OPEN,2025-01-12 10:00:00,EMP006,
+Q8,Ten most recent complaints,,RESULT,10,8,CMP003,CUS003,ACC003,Branch,Transaction Error,High,UNDER_REVIEW,2025-01-09 14:00:00,EMP001,
+Q8,Ten most recent complaints,,RESULT,10,9,CMP002,CUS002,ACC002,Email,Service Delay,Medium,IN_PROGRESS,2025-01-05 11:15:00,EMP002,
+Q8,Ten most recent complaints,,RESULT,10,10,CMP001,CUS001,ACC001,Phone,Fee Dispute,High,OPEN,2025-01-01 09:00:00,EMP001,
